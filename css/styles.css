@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+/*enlace para importar las fuentes desde google font*/
+*{
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background: url("../img/fondo.png");
+    background-size: cover;
+}
+body#body.img-2{
+    background: url("../img/fondo2.png");
+    background-size: cover;
+}
+
+#interacciones{
+    width: 80%;
+    margin: 40px 0 auto;
+    padding: 30px;
+    background: rgb(199, 236, 226);;
+    border-radius:8px ;
+    border: 2px solid #323e41
+
+}
+#interacciones button{
+    background: #380357;
+    color:#e749f5;
+    border-radius:4px ;
+    padding: 8px 12px;
+    border: 1px solid #090909;
+    font-size: 18px;
+    cursor: pointer;
+}
+#cont-figura{
+    width: 80%;
+    margin: 40px 0 auto;
+    padding: 30px;
+    background: rgb(206, 243, 233);;
+    border-radius:8px ;
+    border: 2px solid #323e41
+
+}
+#figura{
+    width: 300px;
+    height: 300px;
+    margin: 20px 0 auto;
+    background: rgb(155, 228, 209);
+    transition: 3s;
+   
+}
+#figura.circulo{
+    transform: rotate(-360deg);
+    border-radius: 50%;
+}
+#figura.rectangulo{
+    transform: rotate(-360deg);
+    width: 300px;
+    height: 600px;
+    
+    background: rgb(155, 228, 209);
+    
+}
+h2{
+    font-size: 45px;
+    color: #3b0404;
+    margin-bottom: 20px;
+    
+}
+#panel-lateral{
+    width: 400px;
+    height:100vh;
+    position: absolute;
+    left: -450px;;
+    top:0;
+    background:#fa8e8e;
+    z-index:999;
+    padding-top:150px;
+    padding-left: 40px;
+    transition: 0.5s;
+}
+#panel-lateral.activo{
+
+    left: 0;
+
+}
+#panel-lateral h3{
+    color: #090909;
+    font-size: 30px;
+    text-align: left;
+
+}
+#panel-lateral a{
+    display: block;
+    padding: 20px;
+    width: 220px;
+    background: #1b0527;
+    color: #fff;
+    margin:5px 0;
+    text-decoration: none;
+
+}
+#panel-lateral.close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    border:0;
+}
+#panel-superior{
+
+}
